@@ -1,0 +1,248 @@
+/*
+ * Globals
+ */
+
+ body {
+   font-family: 'Montserrat', sans-serif;
+ }
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 600px;
+  background-image:url("../images/learn.png");
+  background-repeat: repeat;
+  background-size: cover;
+  /*height: 100%; */
+  /*min-height: 100%;*/
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+
+/*
+ * Header
+ */
+
+
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.masthead {
+  background-color: black;
+  width: 100%;
+}
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 30px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #FFC0CB;
+  border-bottom-color: rgba(255,192,203);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+.jumbotron {
+  padding-bottom: 0;
+  padding-top: 70px;
+}
+
+.jumbotronimg {
+  width: 100%;
+  height: 100%;
+}
+
+.btn-primary {
+  display: flex;
+
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 0px;
+  justify-content: center;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: white;
+    background-color: Dimgray;
+    border-color: Dimgray; /*set the color you want here*/
+}
+
+#socialicon:hover {
+  background-color: MistyRose;
+  color: black;
+}
+.masthead-brand {
+  float: left;
+}
+.masthead-nav {
+  float: right;
+}
+
+#socialicon {
+  font-size: 20px;
+}
+
+/* MAIN PAGE CSS - EDIT BELOW ->>>>> */
+
+.infoheader {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+
+
+}
+
+.infotitle {
+  background-color: black;
+  opacity: 0.9;
+  width: 50%;
+  height: 30%;
+  position: relative;
+  bottom: 7rem;
+  color: MistyRose;
+}
+
+.infocontainer {
+  background-color: black;
+  opacity: 0.7;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+}
+
+
+/* END OF CSS STYLING FOR MAIN BODY OF PAGE TEXT */
+
+ /* Cover*/
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+
+}
+
+/* Responsive design */
+
+@media only screen and (max-width: 770px) {
+  .jumbotron {
+    padding-bottom: 0;
+    padding-top: 0px;
+  }
+  .navbar-left {
+    display: inline-flex;
+
+  }
+
+  .masthead-nav {
+    display: flex;
+  }
+
+  #socialicon {
+    padding-left: 5px;
+  }
+
+  .first {
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .infobox {
+    width: 90%;
+    height: auto;
+    margin-bottom: 5%;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .jumbotron {
+    padding-bottom: 0;
+    padding-top: 0px;
+  }
+}
