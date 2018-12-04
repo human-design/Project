@@ -169,6 +169,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: flex-end;
+  height: 20%;
 
 
 }
@@ -176,10 +177,10 @@ body {
 .infotitle {
   background-color: rgba(0,0,0,0.7);
   width: 50%;
-  height: 30%;
   position: relative;
   bottom: 7rem;
   color: MistyRose;
+  text-align: center;
 }
 
 .infocontainer {
@@ -202,6 +203,10 @@ body {
 
 h1, h2, h3 {
   color: MistyRose;
+}
+
+#title {
+  font-size: 45px;
 }
 
 /* END OF CSS STYLING FOR MAIN BODY OF PAGE TEXT */
