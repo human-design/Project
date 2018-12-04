@@ -83,7 +83,7 @@ body {
  * Header
  */
 
-
+/* Navigation bar */
 .masthead-brand {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -122,6 +122,8 @@ body {
   color: #fff;
   border-bottom-color: #fff;
 }
+
+/* Jumbotron styling */
 
 .jumbotron {
   padding-bottom: 0;
@@ -207,6 +209,10 @@ h1, h2, h3 {
 
 #title {
   font-size: 45px;
+}
+
+#learnstyle {
+  color: red;
 }
 
 /* END OF CSS STYLING FOR MAIN BODY OF PAGE TEXT */
