@@ -2,6 +2,8 @@
  * Globals
  */
 
+
+
  body {
    font-family: 'Montserrat', sans-serif;
  }
@@ -27,6 +29,8 @@ a:hover {
 /*
  * Base structure
  */
+
+
 html {
   background-color: black;
 }
@@ -35,11 +39,33 @@ body {
   height: 100%;
 }
 
+/* Javascript page transitions reference */
+html {
+   animation: fadeSiteIn 0.5s ease forwards; /* [1] */
+}
+
+html.fadeSiteOut {
+ animation:  fadeSiteOut 0.5s ease forwards; /* [2] */
+}
+
+
+@keyframes fadeSiteIn { /* [1] */
+   from   { opacity: 0; }
+   to    { opacity: 1; }
+}
+
+@keyframes fadeSiteOut { /* [2] */
+   from   { opacity: 1; }
+   to     { opacity: 0; }
+}
+
+/* Background images of info pages */
+
 #learn {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
-  background-image:url("../images/learn.png");
+  background-image:url("../images/learn2.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -48,7 +74,7 @@ body {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
-  background-image:url("../images/careers.png");
+  background-image:url("../images/careers2.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -57,10 +83,9 @@ body {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
-  background-image:url("../images/inspire.png");
+  background-image:url("../images/inspire2.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: left;
 }
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
@@ -167,23 +192,7 @@ body {
 
 /* MAIN PAGE CSS - EDIT BELOW ->>>>> */
 
-.infoheader {
-  display: flex;
-  width: 100%;
-  justify-content: flex-end;
-  height: 20%;
 
-
-}
-
-.infotitle {
-  background-color: rgba(0,0,0,0.7);
-  width: 50%;
-  position: relative;
-  bottom: 7rem;
-  color: MistyRose;
-  text-align: center;
-}
 
 .infocontainer {
   background-color: black;
