@@ -203,7 +203,7 @@ html.fadeSiteOut {
   margin-top: 15%;
   padding-left: 20%;
   padding-right: 20%;
-  padding-top: 0px;
+  padding-top: 2%;
   font-size: 16px;
   text-align: left;
 }
@@ -224,6 +224,17 @@ h1, h2, h3 {
   color: red;
 }
 
+.centertext {
+  text-align: center;
+}
+
+.inspiretext {
+  color: #DCD8C7;
+}
+
+.bio {
+  color: black;
+}
 /* END OF CSS STYLING FOR MAIN BODY OF PAGE TEXT */
 
  /* Cover*/
@@ -235,6 +246,7 @@ h1, h2, h3 {
   padding: 10px 20px;
   font-weight: bold;
 }
+
 
 /*
  * Affix and center
@@ -335,5 +347,20 @@ h1, h2, h3 {
     right: 3rem;
   }
 
+  .infocontainer {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+}
+
+@media only screen and (max-width: 807px) {
+
+  #videodesc {
+    font-size: 12px;
+  }
+ #videoheader {
+   visibility: hidden;
+ }
 
 }
