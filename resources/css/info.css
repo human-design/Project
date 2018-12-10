@@ -123,6 +123,7 @@ html.fadeSiteOut {
 }
 .masthead-nav > li + li {
   margin-left: 30px;
+
 }
 .masthead-nav > li > a {
   padding-right: 0;
@@ -135,17 +136,95 @@ html.fadeSiteOut {
   border-bottom: 2px solid transparent;
 
 }
-.masthead-nav > li > a:hover,
-.masthead-nav > li > a:focus {
+.masthead-nav.mistyrose > li > a:hover,
+.masthead-nav.mistyrose > li > a:focus {
   background-color: transparent;
   border-bottom-color: #FFC0CB;
   border-bottom-color: rgba(255,192,203);
 }
+
+.masthead-nav.blue > li > a:hover,
+.masthead-nav.blue > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: DeepSkyBlue;
+  border-bottom-color: DeepSkyBlue;
+}
+
+.masthead-nav.purple > li > a:hover,
+.masthead-nav.purple > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #B51D73;
+  border-bottom-color: #B51D73;
+}
+
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
   color: #fff;
   border-bottom-color: #fff;
+}
+
+#rightmarginreq {
+  margin-right: 30px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Change color of dropdown links on hover */
+.mistyrose .dropdown-content a:hover {background-color: MistyRose; color: black;}
+
+.blue.dropdown-content a:hover {background-color: DeepSkyBlue;}
+
+.purple.dropdown-content a:hover {background-color: #B51D73;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: black;}
+
+/* Social nav bar */
+
+#socialblue:hover {
+  background-color: DeepSkyBlue;
+  color: black;
+}
+
+#socialrose:hover {
+  background-color: MistyRose;
+  color: black;
+}
+
+#socialpurple:hover {
+  background-color: #B51D73;
+  color: black;
+}
+
+.masthead-brand {
+  float: left;
+}
+.masthead-nav {
+  float: right;
+}
+
+#socialblue, #socialrose, #socialpurple {
+  font-size: 20px;
 }
 
 /* Jumbotron styling */
@@ -175,20 +254,7 @@ html.fadeSiteOut {
     border-color: Dimgray; /*set the color you want here*/
 }
 
-#socialicon:hover {
-  background-color: MistyRose;
-  color: black;
-}
-.masthead-brand {
-  float: left;
-}
-.masthead-nav {
-  float: right;
-}
 
-#socialicon {
-  font-size: 20px;
-}
 
 /* MAIN PAGE CSS - EDIT BELOW ->>>>> */
 
@@ -267,6 +333,19 @@ h1, h2, h3 {
 
 /* Responsive design */
 
+
+
+@media only screen and (max-width: 807px) {
+
+  #videodesc {
+    font-size: 12px;
+  }
+ #videoheader {
+   visibility: hidden;
+ }
+
+}
+
 @media only screen and (max-width: 770px) {
   .jumbotron {
     padding-bottom: 0;
@@ -308,11 +387,6 @@ h1, h2, h3 {
   }
 }
 
-@media only screen and (min-width: 329px) and (max-width: 388px) {
-  .masthead-nav {
-    height: 5rem;
-  }
-}
 @media only screen and (max-width: 767px) {
   .jumbotron {
     padding-bottom: 0;
@@ -338,29 +412,45 @@ h1, h2, h3 {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .social.nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 472px) and (max-width: 500px) {
+  .masthead-nav > li > a {
+    padding-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 388px) and (max-width: 472px) {
+  .masthead-nav > li > a {
+    padding-left: 10px;
+
+  }
+
+  .masthead-nav {
+    display: block;
+  }
+}
+
 @media only screen and (max-width: 387px) {
   .masthead-nav {
     display: block;
   }
 
-  .infotitle {
-    right: 3rem;
-  }
 
   .infocontainer {
     padding-left: 5%;
     padding-right: 5%;
   }
-
 }
 
-@media only screen and (max-width: 807px) {
+@media only screen and (min-width: 329px) and (max-width: 388px) {
 
-  #videodesc {
-    font-size: 12px;
+  .masthead-nav {
+    height: 5rem;
   }
- #videoheader {
-   visibility: hidden;
- }
-
 }

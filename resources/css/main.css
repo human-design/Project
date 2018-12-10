@@ -88,7 +88,7 @@ html.fadeSiteOut {
  * Header
  */
 
-
+/* Navigation bar */
 .masthead-brand {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -96,12 +96,14 @@ html.fadeSiteOut {
 .masthead {
   background-color: black;
   width: 100%;
+  z-index: 1;
 }
 .masthead-nav > li {
   display: inline-block;
 }
 .masthead-nav > li + li {
   margin-left: 30px;
+
 }
 .masthead-nav > li > a {
   padding-right: 0;
@@ -117,15 +119,65 @@ html.fadeSiteOut {
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
   background-color: transparent;
-  border-bottom-color: Salmon;
-  border-bottom-color: Salmon;
+  border-bottom-color: salmon;
+  border-bottom-color: salmon;
 }
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
   color: #fff;
-  border-bottom-color: #fff;
+  border-bottom-color: salmon;
 }
+
+#rightmarginreq {
+  margin-right: 30px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: salmon;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: black;}
+
+/* Social nav bar */
+
+#socialicon:hover {
+  background-color: Salmon;
+  color: black;
+}
+.masthead-brand {
+  float: left;
+}
+.masthead-nav {
+  float: right;
+}
+
+#socialicon {
+  font-size: 20px;
+}
+
+
 
 .jumbotron {
   padding-bottom: 0;
@@ -152,20 +204,6 @@ html.fadeSiteOut {
     border-color: Dimgray; /*set the color you want here*/
 }
 
-#socialicon:hover {
-  background-color: Salmon;
-  color: black;
-}
-.masthead-brand {
-  float: left;
-}
-.masthead-nav {
-  float: right;
-}
-
-#socialicon {
-  font-size: 20px;
-}
 
 
 .first {
@@ -253,5 +291,52 @@ html.fadeSiteOut {
   .jumbotron {
     padding-bottom: 0;
     padding-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .jumbotron {
+    padding-bottom: 0;
+    padding-top: 0px;
+  }
+
+}
+
+
+@media only screen and (max-width: 500px) {
+  .social.nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 472px) and (max-width: 500px) {
+  .masthead-nav > li > a {
+    padding-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 388px) and (max-width: 472px) {
+  .masthead-nav > li > a {
+    padding-left: 10px;
+
+  }
+
+  .masthead-nav {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 387px) {
+  .masthead-nav {
+    display: block;
+  }
+
+}
+
+@media only screen and (min-width: 329px) and (max-width: 388px) {
+
+  .masthead-nav {
+    height: 5rem;
   }
 }
