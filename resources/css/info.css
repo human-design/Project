@@ -61,7 +61,7 @@ html.fadeSiteOut {
 
 /* Background images of info pages */
 
- {
+#learn {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
@@ -70,7 +70,7 @@ html.fadeSiteOut {
   background-size: cover;
 }
 
- {
+#careers {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
@@ -79,7 +79,7 @@ html.fadeSiteOut {
   background-size: cover;
 }
 
- {
+#inspire {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
@@ -168,10 +168,6 @@ html.fadeSiteOut {
   margin-right: 30px;
 }
 
-#leftmarginreq {
-  padding-left: 30px;
-}
-
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
@@ -229,15 +225,13 @@ html.fadeSiteOut {
 
 #socialblue, #socialrose, #socialpurple {
   font-size: 20px;
-display: inline-block;
 }
 
 /* Jumbotron styling */
 
-
 .jumbotron {
   padding-bottom: 0;
-  padding-top: 0px;
+  padding-top: 70px;
 }
 
 .jumbotronimg {
@@ -266,23 +260,18 @@ display: inline-block;
 
 
 
-.container-fluid.content {
+.infocontainer {
   background-color: black;
-  color: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  margin-top: 15%;
   padding-left: 20%;
   padding-right: 20%;
+  padding-top: 2%;
   font-size: 16px;
   text-align: left;
-  position: relative;
-  bottom: 50px;
-
-}
-
-.jumbotron {
-  background-color: black;
-}
-.jumbotronimg {
-  bottom: 20px;
 }
 
 #credit {
@@ -371,9 +360,8 @@ h1, h2, h3 {
     display: flex;
   }
 
-  #socialrose, #socialblue, #socialpurple {
+  #socialicon {
     padding-left: 5px;
-    padding-right: 5px;
   }
 
   .first {
@@ -419,6 +407,7 @@ h1, h2, h3 {
   }
   .infocontainer {
     position: relative;
+    top: 15rem;
     height: 10%;
   }
 }
@@ -438,7 +427,7 @@ h1, h2, h3 {
 
 @media only screen and (min-width: 388px) and (max-width: 472px) {
   .masthead-nav > li > a {
-    padding-left: 50px;
+    padding-left: 10px;
 
   }
 
@@ -453,9 +442,9 @@ h1, h2, h3 {
   }
 
 
-  .container-fluid.content {
-    padding-left: 4%;
-    padding-right: 4%;
+  .infocontainer {
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 
