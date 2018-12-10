@@ -312,6 +312,8 @@ h1, h2, h3 {
 .bio {
   color: black;
 }
+
+
 /* END OF CSS STYLING FOR MAIN BODY OF PAGE TEXT */
 
  /* Cover*/
@@ -423,10 +425,14 @@ h1, h2, h3 {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 560px) {
   .social.nav {
     display: flex;
     flex-direction: column;
+  }
+
+  .masthead-nav {
+    height: 15rem;
   }
 }
 
