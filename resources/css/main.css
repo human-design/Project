@@ -271,7 +271,7 @@ html.fadeSiteOut {
   }
 
   #socialicon {
-    padding-left: 5px;
+    padding-left: 0px;
   }
 
   .first {
@@ -310,6 +310,7 @@ html.fadeSiteOut {
   }
 }
 
+
 @media only screen and (min-width: 472px) and (max-width: 500px) {
   .masthead-nav > li > a {
     padding-left: 20px;
@@ -318,7 +319,7 @@ html.fadeSiteOut {
 
 @media only screen and (min-width: 388px) and (max-width: 472px) {
   .masthead-nav > li > a {
-    padding-left: 10px;
+    padding-left: 50px;
 
   }
 
@@ -332,11 +333,20 @@ html.fadeSiteOut {
     display: block;
   }
 
+  #leftmarginreq {
+    left: 20px;
+  }
+
 }
 
-@media only screen and (max-width: 388px) {
+@media only screen and (max-width: 408px) {
 
   .masthead-nav {
     height: 10rem;
+  }
+
+#buttonhome {
+    font-size: 12.5px;
+    font-weight: bold;
   }
 }
