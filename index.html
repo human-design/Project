@@ -3,6 +3,15 @@
 
 
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130758976-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-130758976-1');
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,15 +24,14 @@
 
 
 
-    <!-- Bootstrap core CSS -->
+    <!-- Bootstrap/javascript core links-->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="resources/css/main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us19.list-manage.com","uuid":"3aa9d7ec7a90603caa423f694","lid":"56a46c7983","uniqueMethods":true}) })</script>
-
 
     <!-- Viewport information -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,7 +47,7 @@
       <div class="site-wrapper-inner">
 
         <div class="cover-container">
-
+          <!--Nav bar-->
           <div class="masthead clearfix">
             <div class="inner">
               <nav>
@@ -64,13 +72,13 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-left social">
                   <li><a id="socialicon" href="#"><i class="fab fa-facebook"></i></a></li>
-                  <li><a id="socialicon" href="#"><i class="fab fa-twitter-square"></i></a></li>
+                  <li><a id="socialicon" href="https://twitter.com/notaboysclub"><i class="fab fa-twitter-square"></i></a></li>
                 </ul>
               </nav>
             </div>
           </div>
 
-
+            <!--Jumbotron-->
           <div class="jumbotron">
             <img class="jumbotronimg" src="resources/images/jumbotron5.jpg">
             <p><a id="buttonhome" class="btn btn-primary btn-lg" href="careers.html" role="button"><strong>Get your foot in the door. Find out more. <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span></strong></a></p>
@@ -79,15 +87,39 @@
           <div class="container-fluid first">
             <div class="infobox">
               <h1><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></h1>
-              <h4>Understand the jargon of today’s technology landscape. </h4>
+              <h4><a href="learn.html#dictionary">Understand the jargon of today’s technology landscape.</a> </h4>
             </div>
             <div class="infobox boxborder">
               <h1><span class="glyphicon glyphicon-education" aria-hidden="true"></span></h1>
-              <h4>Check out our list of useful resources to learn more about coding.</h4>
+              <h4><a href="learn.html#resources">Check out our list of useful resources to learn more about coding.</a></h4>
             </div>
             <div class="infobox">
               <h1><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span></h1>
-              <h4>The tech jobs of the future will be defined by the next generation and its values.</h4>
+              <h4><a href="inspire.html">The tech jobs of the future will be defined by the next generation and its values.</a></h4>
+            </div>
+          </div>
+
+          <!-- Button trigger modal -->
+          <button id="modalnewsletter" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+            Sign up to our newsletter!
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <img id="newsletter" src="resources/images/newsletter.png">
+                </div>
+                <div class="modal-body">
+                  <p><a id="signup" class="btn btn-primary btn-lg" href="http://eepurl.com/gaP6BD" role="button"><strong>Sign up here in seconds! <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span></strong></a></p>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
             </div>
           </div>
 
