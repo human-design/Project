@@ -3,6 +3,15 @@
 
 
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130758976-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-130758976-1');
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +24,7 @@
 
 
 
-    <!-- Bootstrap core CSS -->
+    <!-- Bootstrap/javascript core links-->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="resources/css/info.css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -39,7 +48,7 @@
       <div class="site-wrapper-inner">
 
 
-
+        <!--Nav bar-->
         <div class="masthead clearfix">
           <div class="inner">
             <nav>
@@ -64,20 +73,21 @@
               </ul>
               <ul class="nav navbar-nav navbar-left social">
                 <li><a id="socialblue" href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a id="socialblue" href="#"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a id="socialblue" href="https://twitter.com/notaboysclub"><i class="fab fa-twitter-square"></i></a></li>
               </ul>
             </nav>
           </div>
         </div>
-
+        <!--Jumbotron-->
         <div class="jumbotron">
           <img class="jumbotronimg" src="resources/images/learn2.png">>
         </div>
 
         <div class="container-fluid content">
             <!-- ADD ALL PAGE CONTENT HTML IN HERE //EDIT FREELY BETWEEN THIS COMMENT -->
-            <!-- To change heading colour give heading an id and add to info.css file -->
-            <h2>Common Tech Terms: Glossary</h2>
+            <h1 id="dictionary">Common Tech Terms: Glossary</h1>
+              <br>
+              <h4 id="credit">Juliette Lethier</h4>
               <br>
             <h3>Front End</h3>
               <p>The part of an application that the user interacts with directly.</p>
@@ -99,7 +109,7 @@
               <p>A computer language that annotates text so that the computer can manipulate that text.  A markup language consists of easily understood keywords, names, or tags that help format the overall view of a page and the data it contains. HTML (Hypertext Markup Language) is the standard language for web pages and web applications.</p>
 
             <br>
-            <h2>Learn More: Resources</h2>
+            <h1 id="resources">Learn More: Resources</h1>
               <br>
             <h3>Give it a go Online</h3>
 
